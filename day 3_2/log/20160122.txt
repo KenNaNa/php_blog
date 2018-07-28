@@ -1,0 +1,21 @@
+-----------------------------------------
+2016/01/22 17:13:25
+select count(*) from cat where catname='测试234'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/22 17:13:25
+insert into cat (catname) values ('测试234')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/22 17:14:04
+select count(*) from cat where catname='123
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123' at line 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/22 17:14:04
+insert into cat (catname) values ('123')
+-----------------------------------------
+

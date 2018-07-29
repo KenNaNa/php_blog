@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+<style>
+	body {
+		background-image: url('./img/bg.jpg'); 
+	}
+
+	nav ul li {
+		float: left;
+		margin-left: 8px;
+	}
+
+	nav ul li a,nav ul li a:hover {
+		font-size: 20px;
+		text-decoration: none;
+		color: rgb(255, 102, 0);
+	}
+
+	table {
+		background-image: url('./img/3.gif');
+		position: absolute;
+		top: 100px;
+		left: 50px;
+	}
+	table td {
+		margin-right: 20px;
+	}
+
+	textarea {
+		margin-top: 5px;
+	}
+	.tdline1 {
+		font-size: 17px;
+		width: 70px;
+	}
+
+	#content {
+		width: 900px;
+		height: 600px;
+		border: 1px dashed pink;
+		position: absolute;
+		top: 100px;
+		left: 350px;
+	}
+
+	.love {
+		width: 209px;
+		height: 181px;
+	}
+
+	.send {
+		width: 100px;
+		height: 20px;
+		font-size: 17px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.cont {
+		width: 180px;
+		height: 90px;
+		text-indent: 28px;
+		margin-left: 10px;
+	}
+
+	.add {
+		width: 70px;
+		height: 50px;
+		margin-left: 80px;
+		font-size: 16px;
+	}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#" onclick="show();">写纸条</a></li>
+		</ul>
+	</nav>
+	
+	<form action="" method="post">
+		<table>
+			<tr>
+				<td class="tdline1">
+					收信人:
+				</td>
+				<td>
+					<input type="text" name="addressee">
+				</td>
+			</tr>
+			<tr>
+				<td class="tdline1">内容:</td>
+				<td>
+					<textarea name="content" id="" cols="25" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdline1">
+					发信人:
+				</td>
+				<td>
+					<input type="text" name="sender">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td id="sub">
+					<input type="submit" value="提交">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<div id="content">
+		<div class="love" style="background-image: url(./img/o1.gif);position:absolute;">
+			<div class="send">
+				王五:
+			</div>
+			<div class="cont">
+				朱自清燕子去了,有再来的时候;杨柳枯了,有再青的时候,桃花谢了,有再开的时候
+			</div>
+			<div class="add">
+				lily
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function show() {
+		var tab = document.getElementsByTagName('table')[0];
+		if(tab.style.display.indexOf('none') > -1) {
+			tab.style.display = 'block';
+		} else {
+			tab.style.display = 'none';
+		}
+	}
+</script>
+</html>

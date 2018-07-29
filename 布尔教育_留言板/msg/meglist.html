@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/adm.css">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<h1>Pink Contact Form</h1>
+	<div class="login-01">
+    <div id="main">
+        <div id="rside">
+            <table>
+                <tr>
+                    <td>姓名</td>
+                    <td>email</td>
+                    <td>留言内容</td>
+                    <td>操作</td>
+                </tr>
+                <?php foreach($data as $v) {?>
+                <tr>
+                    <td><?php echo $v['id'];?></td>
+                    <td><?php echo $v['name'];?></td>
+                    <td><span class="badge"><?php echo $v['email'];?></span></td>
+                    <td><?php echo $v['content'];?></td>
+                    <td><a href="msgdel.php?id=<?php echo $v['id'];?>">删除</a></td>
+                    <td><a href="msgedit.php?id=<?php echo $v['id'];?>">编辑</a></td>
+                </tr>
+                <?php }?>
+            </table>
+        </div>
+    </div>
+</div>
+	<!--start-copyright-->
+   		<div class="copy-right">
+   			<div class="wrap">
+				<p>Copyright &copy; 2015 留言板</p>
+		</div>
+	</div>
+	<!--//end-copyright-->
+</body>
+</html>

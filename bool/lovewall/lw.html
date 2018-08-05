@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+<style>
+	body {
+		background-image: url('./img/bg.jpg');
+	}
+	textarea{
+		resize:none;
+	}
+	nav li {
+		float: left;
+		margin-left: 10px;
+	}
+
+	nav li a,nav li a:hover {
+		color: rgb(255, 102, 0);
+		font: 20px/30px '宋体','新宋',sans-serif;
+		text-decoration: none;
+	}
+
+	table {
+		position: absolute;
+		top: 100px;
+		left: 60px;
+		background-image: url('./img/3.gif');
+	}
+
+	.ftd {
+		width: 70px;
+		font: 17px/25.5px '宋体','新宋',sans-serif; 
+	}
+
+	#container {
+		width: 900px;
+		height: 600px;
+		/*border: 1px solid red;*/
+		position: absolute;
+		top: 80px;
+		left: 350px;
+	}
+
+	.love {
+		width: 209px;
+		height: 181px;
+	}
+	
+	.addressee {
+		margin-top: 10px;
+		margin-left: 10px;
+		font-size: 20px;
+	}
+
+	.content {
+		text-indent: 35px;
+		font-size: 14px;
+		padding: 6px;
+	}
+
+	.sender {
+		font-size: 17px;
+		margin-top: 17px;
+		margin-left: 120px;
+	}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#" onclick="cli();">写纸条</a></li>
+		</ul>
+	</nav>
+
+	<form action="" method="post">
+		<table>
+			<tr>
+				<td class="ftd">收信人:</td>
+				<td>
+					<input type="text" name="addressee">
+				</td>
+			</tr>
+			<tr>
+				<td class="ftd">内容:</td>
+				<td>
+					<textarea name="content" id="" cols="25" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="ftd">发信人:</td>
+				<td>
+					<input type="text" name="sender">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="提交">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<div id="container">
+		<?php foreach($data as $v){ ?>
+			<div class="love" style="background-image:url(./img/<?php echo $v['pic'] ?>);position:absolute;top:<?php echo $v['rtop'] ?>px;left:<?php echo $v['rleft'] ?>px;">
+				<div class="addressee">
+					<?php
+						echo $v['address'];
+					?>
+				</div>
+				<div class="content">
+					<?php echo $v['content']; ?>
+				</div>
+				<div class="sender">
+					<?php echo $v['sender']; ?>
+				</div>		
+			</div>
+		<?php } ?>
+	</div>
+</body>
+<script>
+	function cli() {
+		var tab = document.getElementsByTagName('table')[0];
+		if(tab.style.display.indexOf('none') > -1) {
+			tab.style.display = "block";
+		} else {
+			tab.style.display = "none";
+		}
+	}
+</script>
+</html>

@@ -1,5 +1,8 @@
 # php_blog
 php博客
+# smarty 模板引擎
+
+https://www.yiibai.com/smarty/
 
 # 如何获取用户的 ip
 

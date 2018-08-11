@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>
+		{if $n == 5}您好啊，
+		{else if $n==4}您补啥啊，
+		{else}您讨厌
+		{/if}
+	</h1>
+	<ul>
+		{foreach $arr as $k=>$v}
+		   <li>
+		   		<span>{$v['id']}</span>
+				<span>{$v["title"]}</span>
+		   </li>
+		  {/foreach}
+	</ul>
+</body>
+</html>

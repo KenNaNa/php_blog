@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>就业意向</title>
+</head>
+
+<body>
+    <form action="form.php" method="post">
+    <table width="100%" align="center" cellspacing="0" cellpadding="0">
+        <tr height="60">
+            <th colspan="2">
+                就业意向调查 <b style="color:red;">（每项都是必填的）</b>
+            </th>
+
+        </tr>
+        <tr height="40">
+            <td>性别</td>
+            <td>
+                <input type="radio" name="sex" value="男">  男
+                <input type="radio" name="sex" value="女"> 女
+            </td>
+        </tr>
+        <tr height="40">
+            <td>学号</td>
+            <td>
+                <input type="text" name="num" > 
+            </td>
+        </tr>
+        <tr height="40">
+            <td>姓名</td>
+            <td>
+                <input type="text" name="username"> 
+            </td>
+        </tr>
+        <tr height="40">
+            <td>手机</td>
+            <td>
+                <input type="text" name="phone"> 
+            </td>
+        </tr>
+        <tr height="40">
+            <td>英语</td>
+            <td>
+                <input type="radio" name="English" value="二级">二级
+                <input type="radio" name="English" value="四级">四级
+                <input type="radio" name="English" value="六级">六级
+                <input type="radio" name="English" value="待定">待定
+            </td>
+        </tr>
+        <tr height="40">
+            <td>国语</td>
+            <td>
+                <input type="radio" name="Chinese" value="流利">流利
+                <input type="radio" name="Chinese" value="会说">会说
+                <input type="radio" name="Chinese" value="能听">能听
+                <input type="radio" name="Chinese" value="不懂">不懂
+            </td>
+        </tr>
+        <tr height="40">
+            <td>粤语</td>
+            <td>
+                <input type="radio" name="Cantonese" value="流利">流利
+                <input type="radio" name="Cantonese" value="会说">会说
+                <input type="radio" name="Cantonese" value="能听">能听
+                <input type="radio" name="Cantonese" value="不懂">不懂
+            </td>
+        </tr>
+        <tr height="40">
+            <td>计算机水平</td>
+            <td>
+                <input type="radio" name="computer" value="一级">一级
+                <input type="radio" name="computer" value="二级">二级
+                <input type="radio" name="computer" value="三级">三级
+                <input type="radio" name="computer" value="待定">待定
+            </td>
+        </tr>
+        <tr height="40">
+            <td>身高（cm）</td>
+            <td>
+                <input type="text" name="height" placeholder="请输入您的身高"> 
+            </td>
+        </tr>
+        <tr height="40">
+            <td>爱好特长</td>
+            <td>
+                <input type="text" name="hobby" placeholder="请输入您的爱好"> 
+            </td>
+        </tr>
+        <tr height="40">
+            <td>意向(可多选)</td>
+            <td>
+                <input type="checkbox" name="aim[]" value="企事业单位">企事业单位
+                <input type="checkbox" name="aim[]" value="考公务员">考公务员
+                <br>
+                <input type="checkbox" name="aim[]" value="三支一扶">三支一扶
+                <input type="checkbox" name="aim[]" value="山区计划西部计划">山区计划
+                <br/>
+                <input type="checkbox" name="aim[]" value="考研">考研
+                <input type="checkbox" name="aim[]" value="留学">留学
+                <input type="checkbox" name="aim[]" value="自主创业">自主创业
+            </td>
+        </tr>
+        <tr height="40">
+            <td>地域(具体镇区)</td>
+            <td>
+                <input type="text" name="place" placeholder="例：中山石岐区">
+               
+            </td>
+        </tr>
+        <tr height="40">
+            <td>职务或岗位</td>
+            <td>
+                <input type="text" name="work" placeholder="例：技术类/行政/销售">
+               
+            </td>
+        </tr>
+        <tr height="40">
+            <td>期望试用薪酬</td>
+            <td>
+                <input type="text" name="pay" placeholder="例：3000">
+               
+            </td>
+        </tr>
+        <tr height="40">
+            <td></td>
+            <td>
+                <input type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>

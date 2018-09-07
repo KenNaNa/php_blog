@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="换一首">
+    <h1>名称</h1>
+    <h2>作者</h2>
+    <p>内容</p>
+</body>
+<script>
+document.getElementsByTagName('input')[0].onclick = function() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            //alert(typeof this.responseText);
+            var res = eval('(' + this.responseText + ')');
+            //console.log(res);
+            document.getElementsByTagName('h1')[0].innerHTML = res.title;
+            document.getElementsByTagName('h2')[0].innerHTML = res.author;
+            document.getElementsByTagName('p')[0].innerHTML = res.content;
+        }
+    }
+
+    xhr.open('get' , '06.php' , true);
+    xhr.send(null);
+}
+</script>
+</html>

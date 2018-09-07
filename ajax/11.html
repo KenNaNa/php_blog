@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>推荐搜索</h1>
+    <input type="text" name="wd" id=""> <input type="button" value="搜索">
+    <ul></ul>
+</body>
+<script>
+function abc(res) {
+    //console.log(res);
+    var wds = res['result'];
+    for(var i =0,str=''; i<wds.length; i++) {
+        str = str +  '<li>' + wds[i].word + '</li>';
+    }
+
+    document.getElementsByTagName('ul')[0].innerHTML = str;
+}
+
+document.getElementsByName('wd')[0].oninput = function () {
+    var url = 'http://sug.so.360.cn/suggest?callback=abc&encodein=utf-8&encodeout=utf-8&format=json&word=' + this.value;
+    var sc = document.createElement('script');
+    sc.src = url;
+
+    var hd = document.getElementsByTagName('head')[0];
+    hd.appendChild(sc);
+}
+</script>
+</html>

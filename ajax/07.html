@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="看新闻">
+    <ul></ul>
+</body>
+<script>
+document.getElementsByTagName('input')[0].onclick=function() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            document.getElementsByTagName('ul')[0].innerHTML = this.responseText;
+        }
+    }
+
+    xhr.open('get' , '07.php' , true);
+    xhr.send(null);
+};
+</script>
+</html>

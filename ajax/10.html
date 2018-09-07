@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="获取163.com的内容" onclick="t1();">
+    <div id="cont"></div>    
+</body>
+<script>
+function t1() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            alert(this.responseText);
+        }
+    }
+
+    xhr.open('get' , 'http://shop.com/ajax.php' , true);
+    xhr.send(null);
+    return xhr.responseText;
+}
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>用户名:<input type="text" name="username"><span id="reg"></span></p>
+        <p>Email:<input type="text" name="email"></p>
+        <p><input type="submit" value="注册"></p>
+    </form>
+</body>
+<script>
+var user = document.getElementsByName('username')[0];
+user.onblur = function() {
+    //alert(this.value);
+    var url = './04.php?un=' + this.value;
+    var reg = document.getElementById('reg');
+
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            if(this.responseText == 0) {
+                reg.innerHTML = '<font color="green">可用</font>';
+            } else {
+                reg.innerHTML = '<font color="red">已被占用</font>';
+            }
+        } 
+    }
+
+    xhr.open('get' , url , true);
+    xhr.send(null);
+}
+</script>
+</html>

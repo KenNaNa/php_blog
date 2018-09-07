@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="请求" onclick="req();">
+</body>
+<script>
+
+function req() {
+    var xhr = new XMLHttpRequest();
+    //console.log(xhr);
+    
+    xhr.onreadystatechange = function() {
+        //console.log(xhr);    
+        if(this.readyState == 4) {
+            alert('请求结束了');
+            alert('内容是'+this.responseText);
+        }
+    }
+
+    xhr.open('get' , './03.php' , true);
+    xhr.send(null);
+
+}
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="看书" onclick="kan();">
+</body>
+<script>
+function kan() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            //alert(this.responseXML);
+            var b = this.responseXML.getElementsByTagName('title')[1];
+            alert(b.childNodes[0].nodeValue);
+        }
+    }
+
+    xhr.open('get' , '08.php' , true);
+    xhr.send(null);
+}
+</script>
+</html>

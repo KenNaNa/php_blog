@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function t1() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            //alert(this.responseText);
+        }
+    }
+
+    xhr.open('get' , '09.php' , true);
+    xhr.send(null);
+    return xhr.responseText;
+}
+
+function t2() {
+    alert('当');
+}
+
+
+alert(t1()); // 
+t2();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div style="width:500px;height:20px;border:1px solid gray"><div id="prog" style="height:100%;width:0%;background:blue;"></div></div>
+
+<form action="12.php" method="post" enctype="multipart/form-data" target="frm">
+    <p><input type="file" name="pic" id=""></p>
+    <p><input type="text" name="username" id=""></p>
+    <p><input type="submit" value="提交"></p>
+</form>
+<iframe src="12.php" name="frm"></iframe>    
+</body>
+<script>
+var fm = document.getElementsByTagName('form')[0];
+fm.onsubmit = function() {
+    var fmdata = new FormData(this); // FormData会把表单的数据(包括文件),整体打包
+
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4) {
+            alert(this.responseText);
+        }
+    }
+
+    xhr.upload.onprogress = function(ev) {
+        if(ev.lengthComputable) {
+            var per = 100* ev.loaded/ev.total;
+            document.getElementById('prog').style.width = per + '%';
+        }
+    }
+
+    xhr.open('post' , '12-2.php' , true);
+    xhr.send(fmdata);
+
+    return false;
+}
+
+alert('南京');
+alert(encodeURI('南京'));
+</script>
+</html>

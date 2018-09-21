@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="布尔教育">
+    <title>Document</title>
+</head>
+<style>
+div {
+    width: 80%;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 10px;
+}
+</style>
+<body>
+    <select name="sel" id="sel">
+    <option value="0">女式风格</option>
+    <option value="1">男式风格</option>
+    </select>
+    <input type="button" onclick="drop();" value="不引起广告的变化了">
+    <br><br><br><br>
+    <div id="test2">新闻</div>
+    <div id="test3">广告</div>
+</body>
+<script>
+
+var sel = document.getElementById('sel');
+sel.observes = [];
+sel.attach = function(obj) {
+    this.observes[this.observes.length] = obj;
+}
+
+sel.detach = function(obj) {
+    for(var i=0; i<this.observes.length; i+=1) {
+        if(this.observes[i] === obj) {
+            delete this.observes[i];
+        }
+    }
+}
+
+sel.onchange = sel.notify = function() {
+    for(var i=0; i<this.observes.length; i+=1) {
+        this.observes[i].update(this);
+    }
+}
+
+
+var test2 = document.getElementById('test2');
+var test3 = document.getElementById('test3');
+test2.update =  function (sel) {
+    if(sel.value == '1') {
+        this.innerHTML = '足球新闻';
+    } else if (sel.value == '0') {
+        this.innerHTML = '宋明星来了';
+    }
+}
+
+test3.update =  function (sel) {
+    if(sel.value == '1') {
+        this.innerHTML = '大众汽车';
+    } else if (sel.value == '0') {
+        this.innerHTML = '化妆品好好好';
+    }
+}
+
+
+sel.attach(test2);
+sel.attach(test3);
+
+
+function drop() {
+    sel.detach(test3);
+}
+
+</script>
+</html>

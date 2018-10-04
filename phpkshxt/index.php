@@ -19,7 +19,7 @@ $data=require './data/1.php';
 include './common/function.php';
 //统计题库目录下的“.php”文件个数,此处要求题库文件名必须是连续的数字
 $count = count(glob('./data/*.php'));
-
+// echo $count;
 //读取题库
 $info=[];                   //保存题库信息
 for($i=1;$i<=$count;$i++){

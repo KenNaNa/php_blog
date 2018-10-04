@@ -1,0 +1,242 @@
+[root@localhost ~]# pwd
+/root
+
+[root@localhost ~]# cd /
+[root@localhost /]# pwd
+/
+
+[root@localhost /]# ls
+bin   data  etc  home  lib64       media  opt   root  sbin   srv  tmp  var
+boot  dev   ftp  lib   lost+found  mnt    proc  run   shell  sys  usr  webdata
+
+[root@localhost /]# ll
+total 76
+lrwxrwxrwx   1 root    root        7 Aug  1  2017 bin -> usr/bin
+dr-xr-xr-x.  4 root    root     4096 Jul 10 20:44 boot
+drwxr-xr-x   3 root    root     4096 Jul 16 22:36 data
+drwxr-xr-x  20 root    root     3040 Jul 17 00:19 dev
+drwxr-xr-x. 91 root    root     4096 Jul 22 13:21 etc
+drwxr-xr-x   2 ftpuser ftpuser  4096 Jul 10 22:21 ftp
+drwxr-xr-x.  3 root    root     4096 Nov  5  2016 home
+lrwxrwxrwx   1 root    root        7 Aug  1  2017 lib -> usr/lib
+lrwxrwxrwx   1 root    root        9 Aug  1  2017 lib64 -> usr/lib64
+drwx------.  2 root    root    16384 Feb 24  2017 lost+found
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 media
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 mnt
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 opt
+dr-xr-xr-x  94 root    root        0 Jul 17 00:19 proc
+dr-xr-x---. 11 root    root     4096 Sep  5 14:07 root
+drwxr-xr-x  24 root    root      660 Jul 22 13:21 run
+lrwxrwxrwx   1 root    root        8 Aug  1  2017 sbin -> usr/sbin
+drwxr-xr-x   2 root    root     4096 Jul 17 13:25 shell
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 srv
+dr-xr-xr-x  13 root    root        0 Jul 17 08:19 sys
+drwxrwxrwt. 10 root    root     4096 Sep  9 20:32 tmp
+drwxr-xr-x. 13 root    root     4096 Aug  1  2017 usr
+drwxr-xr-x. 21 root    root     4096 Jul 17 08:19 var
+drwxrwxrwx   9 apache  apache   4096 Sep  5 14:20 webdata
+
+
+[root@localhost /]# ll -a
+total 84
+dr-xr-xr-x. 22 root    root     4096 Jul 17 13:25 .
+dr-xr-xr-x. 22 root    root     4096 Jul 17 13:25 ..
+-rw-r--r--   1 root    root        0 Feb 24  2017 .autorelabel
+lrwxrwxrwx   1 root    root        7 Aug  1  2017 bin -> usr/bin
+dr-xr-xr-x.  4 root    root     4096 Jul 10 20:44 boot
+drwxr-xr-x   3 root    root     4096 Jul 16 22:36 data
+drwxr-xr-x  20 root    root     3040 Jul 17 00:19 dev
+drwxr-xr-x. 91 root    root     4096 Jul 22 13:21 etc
+drwxr-xr-x   2 ftpuser ftpuser  4096 Jul 10 22:21 ftp
+drwxr-xr-x.  3 root    root     4096 Nov  5  2016 home
+lrwxrwxrwx   1 root    root        7 Aug  1  2017 lib -> usr/lib
+lrwxrwxrwx   1 root    root        9 Aug  1  2017 lib64 -> usr/lib64
+drwx------.  2 root    root    16384 Feb 24  2017 lost+found
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 media
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 mnt
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 opt
+dr-xr-xr-x  94 root    root        0 Jul 17 00:19 proc
+dr-xr-x---. 11 root    root     4096 Sep  5 14:07 root
+drwxr-xr-x  24 root    root      660 Jul 22 13:21 run
+lrwxrwxrwx   1 root    root        8 Aug  1  2017 sbin -> usr/sbin
+drwxr-xr-x   2 root    root     4096 Jul 17 13:25 shell
+drwxr-xr-x.  2 root    root     4096 Nov  5  2016 srv
+dr-xr-xr-x  13 root    root        0 Jul 17 08:19 sys
+drwxrwxrwt. 10 root    root     4096 Sep  9 20:32 tmp
+drwxr-xr-x. 13 root    root     4096 Aug  1  2017 usr
+drwxr-xr-x. 21 root    root     4096 Jul 17 08:19 var
+drwxrwxrwx   9 apache  apache   4096 Sep  5 14:20 webdata
+
+
+[root@localhost /]# ls -R|more
+.:
+bin
+boot
+data
+dev
+etc
+ftp
+home
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+shell
+srv
+sys
+tmp
+usr
+
+[root@localhost /]# ls -t
+tmp      root  etc    var  dev   data  boot  sbin   lib  lost+found  media  opt
+webdata  run   shell  sys  proc  ftp   usr   lib64  bin  home        mnt    srv
+
+
+[root@localhost /]# ls -m
+bin, boot, data, dev, etc, ftp, home, lib, lib64, lost+found, media, mnt, opt,
+proc, root, run, sbin, shell, srv, sys, tmp, usr, var, webdata
+
+
+[root@localhost /]# ls -S
+lost+found  data  ftp   media  opt   shell  tmp  var      dev  lib64  bin  proc
+boot        etc   home  mnt    root  srv    usr  webdata  run  sbin   lib  sys
+
+
+除此之外ls会显示不同颜色，下面是这些颜色的含义：
+
+蓝色—目录
+绿色—可执行文件
+红色—压缩文件
+浅蓝色—链接文件
+粉红色或暗紫色—图片文件
+黄色—设备文件
+灰色—其他文件
+
+
+[root@localhost /]# cd ..
+[root@localhost /]# pwd
+/
+[root@localhost /]# cd ~
+[root@localhost ~]# 
+
+
+[root@localhost ~]# mkdir ken
+[root@localhost ~]# ls
+anaconda3                        for.sh     menu.sh       shell
+Anaconda3-5.2.0-Linux-x86_64.sh  func.sh    nginx-1.15.1  until.sh
+array.sh                         if2.sh     passwd.txt    var1.sh
+auto_install_lamp.sh             if3.sh     read1.sh      var.sh
+auto_scp.sh                      if.sh      read.sh       while2.sh
+backup.sh                        ken        sed.sh        while.sh
+case.sh                          list1.txt  sed..sh
+file.sh                          list.txt   select.sh
+first_shell.sh 
+
+
+[root@localhost ~]# mkdir -p top/sub/sub2
+[root@localhost ~]# ls
+anaconda3                        for.sh     menu.sh       shell
+Anaconda3-5.2.0-Linux-x86_64.sh  func.sh    nginx-1.15.1  top
+array.sh                         if2.sh     passwd.txt    until.sh
+auto_install_lamp.sh             if3.sh     read1.sh      var1.sh
+auto_scp.sh                      if.sh      read.sh       var.sh
+backup.sh                        ken        sed.sh        while2.sh
+case.sh                          list1.txt  sed..sh       while.sh
+file.sh                          list.txt   select.sh
+first_shell.sh                   logtar.sh  set_shell.sh
+
+
+[root@localhost ~]# rm -rf top
+[root@localhost ~]# ls
+anaconda3                        for.sh     menu.sh       shell
+Anaconda3-5.2.0-Linux-x86_64.sh  func.sh    nginx-1.15.1  until.sh
+array.sh                         if2.sh     passwd.txt    var1.sh
+auto_install_lamp.sh             if3.sh     read1.sh      var.sh
+auto_scp.sh                      if.sh      read.sh       while2.sh
+backup.sh                        ken        sed.sh        while.sh
+case.sh                          list1.txt  sed..sh
+file.sh                          list.txt   select.sh
+first_shell.sh                   logtar.sh  set_shell.sh
+
+
+
+[root@localhost ~]# touch testfile
+[root@localhost ~]# ls
+anaconda3                        for.sh     menu.sh       shell
+Anaconda3-5.2.0-Linux-x86_64.sh  func.sh    nginx-1.15.1  testfile
+array.sh                         if2.sh     passwd.txt    until.sh
+auto_install_lamp.sh             if3.sh     read1.sh      var1.sh
+auto_scp.sh                      if.sh      read.sh       var.sh
+backup.sh                        ken        sed.sh        while2.sh
+case.sh                          list1.txt  sed..sh       while.sh
+file.sh                          list.txt   select.sh
+first_shell.sh                   logtar.sh  set_shell.sh
+[root@localhost ~]# echo hello>>testfile
+[root@localhost ~]# ls
+anaconda3                        for.sh     menu.sh       shell
+Anaconda3-5.2.0-Linux-x86_64.sh  func.sh    nginx-1.15.1  testfile
+array.sh                         if2.sh     passwd.txt    until.sh
+auto_install_lamp.sh             if3.sh     read1.sh      var1.sh
+auto_scp.sh                      if.sh      read.sh       var.sh
+backup.sh                        ken        sed.sh        while2.sh
+case.sh                          list1.txt  sed..sh       while.sh
+file.sh                          list.txt   select.sh
+first_shell.sh                   logtar.sh  set_shell.sh
+[root@localhost ~]# more testfile
+hello
+
+[root@localhost ~]# echo My name is Ken >>testfile
+[root@localhost ~]# more testfile
+hello
+My name is Ken
+
+[root@localhost ~]# mkdir dir1
+[root@localhost ~]# mkdir dir2
+[root@localhost ~]# ls
+anaconda3                        file.sh         list.txt      select.sh
+Anaconda3-5.2.0-Linux-x86_64.sh  first_shell.sh  logtar.sh     set_shell.sh
+array.sh                         for.sh          menu.sh       shell
+auto_install_lamp.sh             func.sh         nginx-1.15.1  testfile
+auto_scp.sh                      if2.sh          passwd.txt    until.sh
+backup.sh                        if3.sh          read1.sh      var1.sh
+case.sh                          if.sh           read.sh       var.sh
+dir1                             ken             sed.sh        while2.sh
+dir2                             list1.txt       sed..sh       while.sh
+[root@localhost ~]# cp testfile dir2
+[root@localhost ~]# ls dir2
+testfile
+
+
+[root@localhost ~]# cp -r dir2 dir1
+[root@localhost ~]# ls dir1
+dir2
+
+
+[root@localhost ~]# cp -r dir1 dir2 testfile ken
+[root@localhost ~]# ls ken
+dir1  dir2  testfile
+
+
+[root@localhost ~]# mv testfile dir2 ken
+mv: overwrite 鈥榢en/testfile鈥? yes
+mv: overwrite 鈥榢en/dir2鈥? 
+
+
+[root@localhost ~]# sudo shutdown -h 1
+
+[root@localhost ~]# sudo shutdown -c
+
+[root@localhost ~]# sudo shutdown -h now
+
+
+[root@localhost ~]# sudo init 0
+[root@localhost ~]# sudo poweroff
+
+[root@localhost ~]# sudo reboot
+[root@localhost ~]# sudo init 6

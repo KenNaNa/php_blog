@@ -1,0 +1,8 @@
+name=>Ken
+sex=>man
+name=>Ken
+sex=>man
+name=>Ken
+sex=>man
+name=>Ken
+sex=>man

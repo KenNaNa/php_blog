@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>前台页面</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- 前端要提交到back.php -->
+	<form action="back.php" method="post">
+		<!-- 对话框输入名字 -->
+		Name：<input type="text" name="name" id="name"><br/>
+		<!-- 在对话框输入邮箱地址 -->
+		Email：<input type="email" name="email" id="email"><span id="tip" style="color: red"></span><br/>
+		<!-- 提交按钮 -->
+		<input type="submit" value="提交" id="submit">
+	</form>
+	<script>	
+		(function(){
+			// 简化函数
+			let get = function(id){
+				return document.getElementById(id)
+			};
+			//判断用户输入的电子邮箱格式是否正确
+			//
+			function checkEmail(){
+			　　var myforms=document.forms;
+			　　var myemail=myforms[0].email.value;
+			  // 邮箱验证格式
+			　　var myReg=/^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
+			　　　　if(myReg.test(myemail)){
+			　　　　	return true;
+			　　　　}else{
+			　　　　	return false;
+				}
+			}
+
+			// 获取元素
+			let oName = get('name');
+			let oEmail = get('email');
+			let oTip = get('tip');
+			let oSubmit = get('submit');
+			// 在提交按钮点击的时候
+			// 才进行判断
+			oSubmit.onclick = function(){
+				if(oName.value==''){
+					alert('用户名不能为空');
+
+					return false;
+				}
+				if(checkEmail()){
+					// 检查通过					
+					// 符合格式验证				
+					// 将提示语清空					
+					oTip.innerHTML = '';
+					// 可以提交
+					return true;
+
+				}else{
+					// 否则不通过
+					// 不符合格式验证					
+					// 将提示语赋值					
+					oTip.innerHTML = '您的邮箱格式不正确';
+					// 重新聚焦到email输入框				
+					oEmail.focus();
+					// 不让他提交					
+					return false;
+				}
+			}
+
+		})()
+	</script>
+</body>
+</html>
